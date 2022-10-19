@@ -7,8 +7,7 @@
 		"sideBar.border": "#c0c0c0",
 		"statusBar.background": "#f2f2f2",
 		"statusBar.foreground": "#000000",
-    	"statusBar.border": "#c0c0c0",
-
+		"statusBar.border": "#c0c0c0",
 		"list.activeSelectionIconForeground": "#fff"
 	},
 	"tokenColors": [
@@ -55,7 +54,7 @@
 			"scope": [
 				"keyword",
 				"storage",
-				"keyword.operator"
+				"constant.language",
 			],
 			"settings": {
 				"foreground": "#0033B3"
@@ -64,38 +63,41 @@
 		{
 			"name": "Types",
 			"scope": [
-				"support.type"
+				"support.type",
+				"support.function"
 			],
 			"settings": {
-				"foreground": "#0000c2"
+				"foreground": "#000080"
 			}
 		},
 		{
 			"name": "Language Constants",
 			"scope": [
-				"constant.language",
 				"support.constant",
-				"variable.language"
+				"variable.language",
+				"variable.parameter.function.language.special.self.python",
+				"variable.parameter.function.language.special.cls.python"
 			],
 			"settings": {
-				"foreground": "#0033b3"
+				"foreground": "#9354a6"
 			}
 		},
 		{
 			"name": "Variables",
 			"scope": [
 				"variable",
-				"support.variable"
+				"support.variable",
+				"keyword.operator.unpacking.arguments.python",
+				"keyword.operator"
 			],
 			"settings": {
-				"foreground": "#94558d"
+				"foreground": "#000000"
 			}
 		},
 		{
 			"name": "Functions",
 			"scope": [
 				"entity.name.function",
-				"support.function"
 			],
 			"settings": {
 				"foreground": "#000000"
@@ -127,14 +129,22 @@
 			}
 		},
 		{
-			"name": "Numbers, Characters",
+			"name": "Characters",
 			"scope": [
-				"constant.numeric",
 				"constant.character",
 				"constant"
 			],
 			"settings": {
 				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "Numbers",
+			"scope": [
+				"constant.numeric",
+			],
+			"settings": {
+				"foreground": "#1750eb"
 			}
 		},
 		{
@@ -147,8 +157,8 @@
 		{
 			"name": "Strings: Python single line",
 			"scope": [
-			"string.quoted.single.python",
-					],
+				"string.quoted.single.python",
+			],
 			"settings": {
 				"foreground": "#008080",
 				"fontStyle": "bold"
@@ -159,9 +169,9 @@
 			"scope": [
 				"string.quoted.multi.python",
 				"string.quoted.docstring.multi.python"
-					],
+			],
 			"settings": {
-				"foreground": "#008080",
+				"foreground": "#8c8c8c",
 			}
 		},
 		{
@@ -193,17 +203,25 @@
 			}
 		},
 		{
+			"name": "Magic functions: python",
+			"scope": [
+				"support.function.magic.python",
+			],
+			"settings": {
+				"foreground": "#b200b2"
+			}
+		},
+		{
 			"name": "Function calls: python",
 			"scope": [
 				"meta.function.python",
 				"meta.function-call.python",
-			"variable.parameter.function-call.python"
-		],
+				"variable.parameter.function-call.python"
+			],
 			"settings": {
 				"foreground": "#000000"
 			}
 		},
-
 		{
 			"name": "HTML: Doctype Declaration",
 			"scope": [
