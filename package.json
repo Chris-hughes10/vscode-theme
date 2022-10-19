@@ -1,0 +1,21 @@
+{
+  "name": "chris-simple-python-theme",
+  "displayName": "Chris-simple-python-theme",
+  "description": "A simple colour theme for Python, without too many colours!",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Chris-simple-python-theme",
+        "uiTheme": "vs",
+        "path": "./themes/Chris-simple-python-theme-color-theme.json"
+      }
+    ]
+  }
+}
